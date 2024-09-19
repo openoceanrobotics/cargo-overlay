@@ -1,0 +1,20 @@
+[package]
+name = "cargo-overlay"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Build then copy your project binary to a remote host."
+homepage = "https://openoceanrobotics.com/"
+repository = "https://github.com/openoceanrobotics/cargo-overlay"
+readme = "README.md"
+exclude = [ "flake.nix", "flake.lock", ]
+
+[dependencies]
+cargo_metadata = "0.18.1"
+cargo_toml = "0.20.4"
+clap = { version = "4.5.7", features = ["cargo", "derive"] }
+indicatif = "0.17.8"
+owo-colors = "4.0.0"
+regex = "1.10.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
